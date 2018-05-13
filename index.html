@@ -9,7 +9,11 @@
     <title>Wenfang Hu - The Unusual Developer</title>
     <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="
+    sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
+    </script> -->
 </head>
 <body>
 	<nav class="navbar navbar-default navbar-fixed-top">
@@ -20,15 +24,22 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="#">Wenfang Hu</a>
             </div>
 
             <div class="collapse navbar-collapse" id="page-nav">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#about">About</a></li>
+                    <li><a href="#about-left" id="about-link">About</a></li>
+                    <li><a href="#skills">My Skills</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact Me</a></li>
+                    <!-- <li><a href="#contact">Contact Me</a></li> -->
+                    <li><span id="email-tooltip" tooltip="Click to copy my email address to your clipboard">
+                    	<a id="email" data-clipboard-text="wfhu06@gmail.com">
+                    		<i class="fa fa-envelope fa-3x animated"></i>
+                        </a></span>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -36,16 +47,130 @@
         <!-- /.container -->
     </nav>
 
-    <div class="container" id="landing">
-		<div class="split left">
-		    <h1>The Chemist</h1>
-		    <a href="#" class="read-more">Read More</a>
+	<header>
+	    <div class="container">
+			<div class="split left">
+			    <h1>The Chemist</h1>
+			    <a href="#about-left" class="more">Read More</a>
+			</div>
+		    <div class="split right">
+		        <h1>The Programmer</h1>
+		        <a href="#about-right" class="more">Read More</a>
+		    </div>
 		</div>
-	    <div class="split right">
-	        <h1>The Programmer</h1>
-	        <a href="#" class="read-more">Read More</a>
-	    </div>
-	</div>
+	</header>
+
+    <main>
+    	<!-- About Sections -->
+        <section id="about-left">
+	        <div id="left-div">
+	        	<div class="row">
+			        <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 text-center">
+			        	<h2 id="about-title-left">Computational Chemist</h2>
+			        	<hr>
+			            <p id="left-text">
+			            	I started my career as a computational chemist. Unlike a traditioanl chemist, I used computer and computer softwares as my experimental tools. If I am asked to use one sentence to summarize my research, I'd say it is all about developing computational methods that bridge the gap between the macroscopic world that is described by classical mechanics and the molecular world that is dictated by quantum mechanics. Sounds cool, huh?
+			            </p>
+			        </div>
+		        </div>
+		        <div class="row" id="down-icon">
+	                <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 text-center">
+		                <a href="#about-right" class="btn-circle">
+		                    <i class="fa fa-angle-double-down fa-fw animated"></i>
+		                </a>
+	                </div>
+                </div>	
+	        </div>
+<!-- 	        <div class="clear"></div>  -->
+        </section>
+
+        <section id="about-right">
+            <div id="right-div">
+            	<div class="row">
+			        <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 text-center">
+			        	<h2 id="about-title-right">Application Developer</h2>
+			        	<hr>
+			            <p id="right-text">
+			            	I fell in love with programming while doing research. I've learned to code in some of the mainstream languages like C, C++, FORTRAN, Java, JavaScript, Python, Perl, and even Unix shell scripting through jobs and technical trainings. Curious of what I have done in the past and plan to do in the future? Then browse through my page to learn more or click on the links to my resume, Github and LinkedIn pages.
+			            </p>
+			        </div>
+		        </div>
+		        <div class="row" id="social-icons">
+		        	<div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 text-center">
+		                <!-- github link -->
+		                <a href="https://github.com/yxcv5" class="btn btn-social-icon btn-github" target="_blank">
+		                    <i class="fa fa-github fa-fw fa-3x animated"></i>
+		                </a>
+		                <!-- LinkedIn link -->
+		                <a href="https://www.linkedin.com/in/xingyangchen" class="btn btn-social-icon btn-linkedin" target="_blank">
+		                    <i class="fa fa-linkedin fa-fw fa-3x animated"></i>
+		                </a>
+		                <!-- resume link -->
+		                <a href="https://docs.google.com/document/d/1DrWnJ_vXB0RuXlyNGDrMMD33NN-DmlPgO2vDjAkCFYw/edit?usp=sharing" class="btn btn-social-icon btn-camera" target="_blank">
+		                    <i class="fa fa-file-text-o fa-fw fa-3x animated"></i>
+		                </a>
+	                </div>
+	            </div>	 
+	        </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section>
+        	<div class="row">
+        		<div class= "col-12">
+        			<ul id="" class="">
+        				<li style="opacity: 1;">
+        					<a href="">
+        						<img src="" class="">
+        						<div class="">
+        							<span class="arrow-r" style="opacity: 0; right: 0px;"></span>
+        							<h4></h4>
+        						</div>
+        					</a>
+        				</li>
+        				<li></li>
+        			</ul>
+        		</div>
+        	</div>
+        </section>
+
+
+    </main>
+
+
+
+	<!-- <script>
+    $(function() {
+      // Smooth Scrolling
+      $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+    </script> -->
+    <!-- <script>
+	$(document).ready(function(){
+		$(window).scroll(function() {
+	   var hT = $('#about-left').offset().top,//the offset coordinates for the selected elements from the top in pixels
+	       hH = $('#about-left').outerHeight(),//element total height
+	       wH = $(window).height(),
+	       wS = $(this).scrollTop();
+	       console.log("outside " + wS);
+	   if(wS > (hT+hH-wH) && (hT > wS) && (wS+wH > hT+hH)) {
+	   	    console.log("inside " + wS);
+	      	$("#about-right").hide();
+	   }
+	});
+	});
+    </script> -->
 
     <!-- SCRIPTS -->
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="
@@ -53,6 +178,7 @@
     </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.13/clipboard.min.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>
